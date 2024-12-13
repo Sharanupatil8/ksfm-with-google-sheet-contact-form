@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        ptserif: ["PT Serif", "serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
