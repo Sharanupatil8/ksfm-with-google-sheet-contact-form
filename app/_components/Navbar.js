@@ -4,7 +4,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="flex items-center border border-emerald-900 max-w-7xl   justify-between w-full mx-auto h-[90px] rounded-3xl   px-4 md:px-6 ">
+    <nav className="flex items-center border border-emerald-900 max-w-7xl   justify-between w-full mx-auto h-[80px] rounded-3xl   px-4 md:px-6 ">
       <Link href="/" className="overflow-hidden">
         <Image
           src="/assets/logo.png"

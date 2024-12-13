@@ -69,13 +69,13 @@ function Hero() {
   }, []);
 
   return (
-    <header className="h-screen  relative overflow-hidden px-4 md:px-12 py-6 w-full ">
+    <header className="h-screen overflow-hidden  relative  px-4 md:px-12 pt-6 w-full ">
       {/* Navbar section */}
       <div className="navbar">
         <Navbar />
       </div>
 
-      <div className="flex  justify-end relative   flex-col pt-16 ">
+      <div className="flex  justify-end relative   flex-col pt-12 ">
         {/* Hero section text */}
         <div className="text-center max-w-7xl mx-auto relative">
           <div className="absolute top-0 left-leaf  -right-[100px]">
@@ -90,11 +90,11 @@ function Hero() {
           <h1 className="text-gray-800  text-3xl md:text-5xl xl:text-6xl tracking-[-1px] font-bold text-center font-ptserif leading-[1.3]">
             Own Your Sustainable Farmland <br /> at KarNaSree Farm Meadows
           </h1>
-          <p className="mt-4 text-gray-700 leading-[1.6] text-lg">
+          <p className="mt-3 text-gray-700 leading-[1.6] text-lg">
             Own a serene farmland at Kar Na Sree, where sustainable living meets
             well-being in harmony with nature.
           </p>
-          <div className="mt-6 flex space-x-4 justify-center btn">
+          <div className="mt-4 flex space-x-4 justify-center btn">
             <Link
               href="/"
               className=" text-lg flex space-x-2 items-center shadow-sm bg-emerald-700 text-white px-4 md:px-6 py-2"
@@ -121,7 +121,7 @@ function Hero() {
         </div>
         {/* Hero section Cards */}
         <div className="grid grid-cols-5 gap-x-12 items-end -mt-8">
-          <div className="card bg-emerald-700 z-10 relative px-5 rounded-xl py-5 h-[400px] w-full">
+          <div className="card bg-emerald-700 z-10 relative px-5 rounded-xl py-5 h-[360px] w-full">
             <h2 className="flex z-20 flex-col pt-4 items-start text-white relative">
               <span className="text-white font-ptserif font-bold text-3xl md:text-5xl lg:text-8xl">
                 400+
@@ -132,7 +132,7 @@ function Hero() {
             </h2>
             <div className="absolute w-4/5 mx-auto text-center bottom-4 z-10 px-3 py-3 rounded-2xl text-white backdrop-blur-lg bg-white/10 border border-white/10">
               <Link
-                className="text-white font-medium font-poppins text-2xl"
+                className="text-white font-medium font-poppins text-xl"
                 href=""
               >
                 Discover Now <span className="rotate-45">&rarr;</span>
@@ -149,7 +149,7 @@ function Hero() {
           </div>
 
           {/* Other Cards */}
-          <div className="bg-emerald-700 card h-[300px] z-10 relative px-5 rounded-xl w-full overflow-hidden">
+          <div className="bg-emerald-700 card h-[280px] z-10 relative px-5 rounded-xl w-full overflow-hidden">
             <h2 className="flex z-20 flex-col pt-4 items-start text-white relative">
               <span className="text-white font-ptserif font-bold text-3xl md:text-5xl lg:text-8xl">
                 20+
@@ -158,7 +158,7 @@ function Hero() {
             </h2>
             <div className="absolute w-4/5 z-50 mx-auto text-center bottom-4  px-3 py-3 rounded-2xl text-white backdrop-blur-lg bg-white/10 border border-white/30">
               <Link
-                className="text-white font-medium font-poppins text-2xl"
+                className="text-white font-medium font-poppins text-xl"
                 href=""
               >
                 Explore Now <span className="rotate-45">&rarr;</span>
@@ -178,7 +178,7 @@ function Hero() {
           <div className="bg-emerald-700 card relative h-[200px] px-4 py-2 w-full rounded-xl overflow-hidden">
             <div className="absolute w-4/5 z-50 mx-auto text-center bottom-4  px-3 py-3 rounded-2xl text-white backdrop-blur-lg bg-white/10 border border-white/30">
               <Link
-                className="text-white font-medium font-poppins text-2xl"
+                className="text-white font-medium font-poppins text-xl"
                 href=""
               >
                 Book Now <span className="rotate-45">&rarr;</span>
@@ -186,7 +186,7 @@ function Hero() {
             </div>
             <h2 className="flex z-20 flex-col pt-3 items-start text-white relative">
               <span className="text-white font-ptserif font-bold text-3xl md:text-5xl ">
-                Book Your Site Visit
+                Book Site Visit
               </span>
             </h2>
 
@@ -195,7 +195,7 @@ function Hero() {
             <div className="h-20 w-20  scale-150 bg-emerald-400 z-20 absolute -right-[20px] -bottom-[20px] rounded-full"></div>
           </div>
 
-          <div className="bg-emerald-700 card h-[300px] px-5 py-2 w-full relative overflow-hidden rounded-xl">
+          <div className="bg-emerald-700 card h-[280px] px-5 py-2 w-full relative overflow-hidden rounded-xl">
             <h2 className=" z-20 text-white font-ptserif font-bold text-3xl md:text-5xl  pt-4 items-start  relative">
               <span className="text-4xl md:text-7xl block mb-1">90 </span>
               <span> Minutes from Airport</span>
@@ -213,13 +213,13 @@ function Hero() {
           </div>
 
           {/* Villas Card */}
-          <div className="bg-emerald-700 card relative z-10 px-5 rounded-xl py-5 h-[400px] w-full">
+          <div className="bg-emerald-700 card relative z-10 px-5 rounded-xl py-5 h-[360px] w-full">
             <h2 className="flex z-20 relative flex-col pt-4 items-start text-white">
-              <span className="text-white font-ptserif font-bold text-3xl md:text-5xl lg:text-8xl">
+              <span className="text-white font-ptserif font-bold text-3xl md:text-5xl lg:text-7xl">
                 1,2,3 BHK
               </span>
-              <span className="text-xl mt-3">
-                Farm Villas Including <br /> 45 Different plantations
+              <span className="text-xl mt-2">
+                Farm Villas Including 45 Different plantations
               </span>
             </h2>
             <div className="absolute inset-0 z-0 rounded-xl overflow-hidden">
@@ -232,7 +232,7 @@ function Hero() {
             </div>
             <div className="absolute w-4/5 mx-auto text-center bottom-4 z-10 px-3 py-3 rounded-2xl text-white backdrop-blur-lg bg-white/10 border border-white/10">
               <Link
-                className="text-white font-medium font-poppins text-2xl"
+                className="text-white font-medium font-poppins text-xl"
                 href=""
               >
                 View Plans <span className="rotate-45">&rarr;</span>
