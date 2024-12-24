@@ -10,8 +10,8 @@ function Hero() {
     gsap.set(".navbar", { opacity: 0, y: -100 });
 
     gsap.set("h1", { opacity: 0, y: 100 });
-    gsap.set("p", { opacity: 0, y: 100 });
-    gsap.set("p", { opacity: 0 });
+    gsap.set(".hero-subtext", { opacity: 0, y: 100 });
+
     gsap.set(".btn", { opacity: 0 });
     gsap.set(".card", { opacity: 0, yPercent: 100, transformOrigin: "top" });
     gsap.set(".right-leaf", { opacity: 0, x: 100 });
@@ -19,7 +19,7 @@ function Hero() {
 
     const tl = gsap.timeline({
       defaults: {
-        duration: 3,
+        duration: 1,
         ease: "power1.inOut",
       },
     });
@@ -33,43 +33,43 @@ function Hero() {
     tl.to(".right-leaf", {
       opacity: 1,
       x: 0,
-      duration: 0.3,
+      duration: 0.2,
     });
     tl.to(".right-leaf", {
       opacity: 1,
       x: 0,
-      duration: 0.3,
+      duration: 0.2,
     });
     tl.to(".navbar", {
       opacity: 1,
       y: 0,
-      duration: 0.3,
+      duration: 0.2,
     });
     tl.to("h1", {
       opacity: 1,
       y: 0,
-      duration: 0.3,
+      duration: 0.2,
     });
-    tl.to("p", {
+    tl.to(".hero-subtext", {
       opacity: 1,
       y: 0,
-      duration: 0.3,
+      duration: 0.1,
     });
     tl.to(".btn", {
       opacity: 1,
       y: 0,
-      duration: 0.3,
+      duration: 0.1,
     });
     tl.to(".card", {
       opacity: 1,
       yPercent: 0,
-      duration: 0.3,
-      stagger: 0.3,
+      duration: 0.2,
+      stagger: 0.1,
     });
   }, []);
 
   return (
-    <header className="h-screen overflow-hidden  relative  px-4 md:px-12 pt-6 w-full ">
+    <header className="hero-image h-screen overflow-hidden  relative  px-4 md:px-12 pt-6 w-full ">
       {/* Navbar section */}
       <div className="navbar">
         <Navbar />
@@ -90,20 +90,20 @@ function Hero() {
           <h1 className="text-gray-800  text-3xl md:text-5xl xl:text-6xl tracking-[-1px] font-bold text-center font-ptserif leading-[1.3]">
             Own Your Sustainable Farmland <br /> at KarNaSree Farm Meadows
           </h1>
-          <p className="mt-3 text-gray-700 leading-[1.6] text-lg">
+          <p className="mt-3 hero-subtext text-gray-700 leading-[1.6] text-lg">
             Own a serene farmland at Kar Na Sree, where sustainable living meets
             well-being in harmony with nature.
           </p>
           <div className="mt-4 flex space-x-4 justify-center btn">
             <Link
               href="/"
-              className=" text-lg flex space-x-2 items-center shadow-sm bg-emerald-700 text-white px-4 md:px-6 py-2"
+              className=" text-lg flex space-x-2 items-center rounded-md   shadow-sm bg-emerald-700 text-white px-4 md:px-6 py-2"
             >
               Contact Now
             </Link>
             <Link
               href="/"
-              className=" text-lg bg-amber-700 md:px-6 text-white px-4 py-2"
+              className=" text-lg bg-amber-700 md:px-6 text-white px-4 py-2 rounded-md"
             >
               Watch Now
             </Link>

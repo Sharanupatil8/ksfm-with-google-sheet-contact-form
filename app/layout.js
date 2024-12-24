@@ -13,6 +13,7 @@ const ptserif = PT_Serif({
 });
 
 import "./globals.css";
+import SmoothScrolling from "./_components/SmoothScrolling";
 
 export const metadata = {
   title: "Kar Na Sree Farm Meadows",
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins_fonts.className} antialiased`}>
-        {children}
+        <SmoothScrolling>{children}</SmoothScrolling>
       </body>
     </html>
   );

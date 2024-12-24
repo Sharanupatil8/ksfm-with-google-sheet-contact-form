@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-image {
+  background-image: url("../public/assets/radici.svg");
+  height: 100%;
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Add smooth motion animation */
+  animation: moveBackground 1s linear infinite alternate;
+
+  /* Grain effect */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Keyframes for smooth motion */
+@keyframes moveBackground {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
