@@ -1,244 +1,66 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "./Navbar";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import CtaButton from "./CtaButton";
+import { HardDriveDownload } from "lucide-react";
+import { HiArrowDown } from "react-icons/hi2";
 
 function Hero() {
   useGSAP(() => {
-    gsap.set(".navbar", { opacity: 0, y: -100 });
-
-    gsap.set("h1", { opacity: 0, y: 100 });
-    gsap.set(".hero-subtext", { opacity: 0, y: 100 });
-
-    gsap.set(".btn", { opacity: 0 });
-    gsap.set(".card", { opacity: 0, yPercent: 100, transformOrigin: "top" });
+    gsap.set([".navbar", "h1", ".hero-subtext", ".btn", ".card"], {
+      opacity: 0,
+      y: 100,
+    });
     gsap.set(".right-leaf", { opacity: 0, x: 100 });
     gsap.set(".left-leaf", { opacity: 0, scale: 6, rotate: 45 });
 
-    const tl = gsap.timeline({
-      defaults: {
-        duration: 1,
-        ease: "power1.inOut",
-      },
-    });
+    gsap
+      .timeline({ defaults: { duration: 1, ease: "power1.inOut" } })
 
-    tl.to(".left-leaf", {
-      opacity: 1,
-      scale: 1,
-      duration: 1,
-      rotate: 0,
-    });
-    tl.to(".right-leaf", {
-      opacity: 1,
-      x: 0,
-      duration: 0.2,
-    });
-    tl.to(".right-leaf", {
-      opacity: 1,
-      x: 0,
-      duration: 0.2,
-    });
-    tl.to(".navbar", {
-      opacity: 1,
-      y: 0,
-      duration: 0.2,
-    });
-    tl.to("h1", {
-      opacity: 1,
-      y: 0,
-      duration: 0.2,
-    });
-    tl.to(".hero-subtext", {
-      opacity: 1,
-      y: 0,
-      duration: 0.1,
-    });
-    tl.to(".btn", {
-      opacity: 1,
-      y: 0,
-      duration: 0.1,
-    });
-    tl.to(".card", {
-      opacity: 1,
-      yPercent: 0,
-      duration: 0.2,
-      stagger: 0.1,
-    });
+      .to(
+        ["h1", ".hero-subtext", ".btn"],
+        { opacity: 1, y: 0, stagger: 0.1 },
+        "-=0.4"
+      )
+      .to(".card", { opacity: 1, y: 0, stagger: 0.1 }, "-=0.3");
   }, []);
 
   return (
-    <header className="hero-image h-screen overflow-hidden  relative  px-4 md:px-12 pt-6 w-full ">
-      {/* Navbar section */}
-      <div className="navbar">
-        <Navbar />
+    <header className="hero-image h-dvh overflow-hidden relative px-4 md:px-12 pt-6 w-full bg-emerald-100">
+      <div className="absolute inset-0">
+        <video
+          src="/hero-video_2.mp4"
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          poster="/fallback-image.jpg"
+        />
+        <div className="absolute inset-0 bg-gray-900 bg-opacity-70"></div>
       </div>
-
-      <div className="flex  justify-end relative   flex-col pt-12 ">
-        {/* Hero section text */}
-        <div className="text-center max-w-7xl mx-auto relative">
-          <div className="absolute top-0 left-leaf  -right-[100px]">
-            <Image
-              src="/assets/leave.png"
-              alt=""
-              width="100"
-              height="200"
-              className="  -rotate-45"
-            />
-          </div>
-          <h1 className="text-gray-800  text-3xl md:text-5xl xl:text-6xl tracking-[-1px] font-bold text-center font-ptserif leading-[1.3]">
-            Own Your Sustainable Farmland <br /> at KarNaSree Farm Meadows
-          </h1>
-          <p className="mt-3 hero-subtext text-gray-700 leading-[1.6] text-lg">
-            Own a serene farmland at Kar Na Sree, where sustainable living meets
-            well-being in harmony with nature.
-          </p>
-          <div className="mt-4 flex space-x-4 justify-center btn">
-            <Link
-              href="/"
-              className=" text-lg flex space-x-2 items-center rounded-md   shadow-sm bg-emerald-700 text-white px-4 md:px-6 py-2"
-            >
-              Contact Now
-            </Link>
-            <Link
-              href="/"
-              className=" text-lg bg-amber-700 md:px-6 text-white px-4 py-2 rounded-md"
-            >
-              Watch Now
-            </Link>
-          </div>
-
-          <div className="absolute right-leaf top-0 -left-[100px] w-full">
-            <Image
-              src="/assets/leave.png"
-              alt=""
-              width="100"
-              height="200"
-              className="  rotate-45"
-            />
-          </div>
-        </div>
-        {/* Hero section Cards */}
-        <div className="grid grid-cols-5 gap-x-12 items-end -mt-8">
-          <div className="card bg-emerald-700 z-10 relative px-5 rounded-xl py-5 h-[360px] w-full">
-            <h2 className="flex z-20 flex-col pt-4 items-start text-white relative">
-              <span className="text-white font-ptserif font-bold text-3xl md:text-5xl lg:text-8xl">
-                400+
-              </span>
-              <span className="text-xl mt-3">
-                Farmlands, Infinite Possibilities
-              </span>
-            </h2>
-            <div className="absolute w-4/5 mx-auto text-center bottom-4 z-10 px-3 py-3 rounded-2xl text-white backdrop-blur-lg bg-white/10 border border-white/10">
-              <Link
-                className="text-white font-medium font-poppins text-xl"
-                href=""
-              >
-                Discover Now <span className="rotate-45">&rarr;</span>
-              </Link>
-            </div>
-            <div className="absolute inset-0 z-0 rounded-xl overflow-hidden">
-              <Image
-                src="/assets/farmland.png"
-                className="w-full h-full object-cover opacity-60"
-                fill
-                alt="farmland image representation"
-              />
-            </div>
-          </div>
-
-          {/* Other Cards */}
-          <div className="bg-emerald-700 card h-[280px] z-10 relative px-5 rounded-xl w-full overflow-hidden">
-            <h2 className="flex z-20 flex-col pt-4 items-start text-white relative">
-              <span className="text-white font-ptserif font-bold text-3xl md:text-5xl lg:text-8xl">
-                20+
-              </span>
-              <span className="text-xl mt-2">Worldclass Amenities</span>
-            </h2>
-            <div className="absolute w-4/5 z-50 mx-auto text-center bottom-4  px-3 py-3 rounded-2xl text-white backdrop-blur-lg bg-white/10 border border-white/30">
-              <Link
-                className="text-white font-medium font-poppins text-xl"
-                href=""
-              >
-                Explore Now <span className="rotate-45">&rarr;</span>
-              </Link>
-            </div>
-            <div className="absolute top-0 left-0 w-full h-full">
-              <Image
-                src="/assets/lake.webp"
-                alt="Farmland Companies in bangalore near to the airport"
-                width="300"
-                height="300"
-                className="object-cover w-full h-full opacity-50"
-              />
-            </div>
-          </div>
-
-          <div className="bg-emerald-700 card relative h-[200px] px-4 py-2 w-full rounded-xl overflow-hidden">
-            <div className="absolute w-4/5 z-50 mx-auto text-center bottom-4  px-3 py-3 rounded-2xl text-white backdrop-blur-lg bg-white/10 border border-white/30">
-              <Link
-                className="text-white font-medium font-poppins text-xl"
-                href=""
-              >
-                Book Now <span className="rotate-45">&rarr;</span>
-              </Link>
-            </div>
-            <h2 className="flex z-20 flex-col pt-3 items-start text-white relative">
-              <span className="text-white font-ptserif font-bold text-3xl md:text-5xl ">
-                Book Site Visit
-              </span>
-            </h2>
-
-            <div className="h-40  w-40 bg-emerald-600 z-10 absolute -right-[40px] -bottom-[50px] rounded-full"></div>
-
-            <div className="h-20 w-20  scale-150 bg-emerald-400 z-20 absolute -right-[20px] -bottom-[20px] rounded-full"></div>
-          </div>
-
-          <div className="bg-emerald-700 card h-[280px] px-5 py-2 w-full relative overflow-hidden rounded-xl">
-            <h2 className=" z-20 text-white font-ptserif font-bold text-3xl md:text-5xl  pt-4 items-start  relative">
-              <span className="text-4xl md:text-7xl block mb-1">90 </span>
-              <span> Minutes from Airport</span>
-            </h2>
-
-            <div className="absolute top-0 left-0 w-full h-full">
-              <Image
-                src="/assets/airport.webp"
-                alt="Farmland Companies in bangalore near to the airport"
-                width="300"
-                height="300"
-                className="object-cover w-full h-full opacity-50"
-              />
-            </div>
-          </div>
-
-          {/* Villas Card */}
-          <div className="bg-emerald-700 card relative z-10 px-5 rounded-xl py-5 h-[360px] w-full">
-            <h2 className="flex z-20 relative flex-col pt-4 items-start text-white">
-              <span className="text-white font-ptserif font-bold text-3xl md:text-5xl lg:text-7xl">
-                1,2,3 BHK
-              </span>
-              <span className="text-xl mt-2">
-                Farm Villas Including 45 Different plantations
-              </span>
-            </h2>
-            <div className="absolute inset-0 z-0 rounded-xl overflow-hidden">
-              <Image
-                src="/assets/villa.jpeg"
-                className="w-full h-full object-cover opacity-60"
-                fill
-                alt="farmland image representation"
-              />
-            </div>
-            <div className="absolute w-4/5 mx-auto text-center bottom-4 z-10 px-3 py-3 rounded-2xl text-white backdrop-blur-lg bg-white/10 border border-white/10">
-              <Link
-                className="text-white font-medium font-poppins text-xl"
-                href=""
-              >
-                View Plans <span className="rotate-45">&rarr;</span>
-              </Link>
-            </div>
-          </div>
+      {/* Hero Content */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+        <h1 className="text-white text-4xl md:text-5xl xl:text-[84px] tracking-[-1px] font-bold font-ptserif leading-[1.3]">
+          Own Your Sustainable Farmvillas <br /> at Karnasree Farm Meadows
+        </h1>
+        <p className="mt-3 md:mt-4 hero-subtext text-gray-100 leading-[1.6] text-lg max-w-5xl">
+          Own a serene farmvillas at Kar Na Sree, where sustainable living meets
+          well-being in harmony with nature.
+        </p>
+        <div className="mt-6 flex space-x-4 btn">
+          <CtaButton />
+          <Link
+            href="https://drive.google.com/drive/folders/1ia7TbgcEb_qvsWVUSG_dDWSrTersHebr?usp=sharing"
+            target="_blank"
+            className="text-lg flex items-center bg-amber-700 text-white px-6 py-2 rounded-md shadow-md"
+          >
+            <span>
+              <HiArrowDown className="me-1" />
+            </span>
+            <p> Download Brochure</p>
+          </Link>
         </div>
       </div>
     </header>
