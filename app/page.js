@@ -6,11 +6,12 @@ import Footer from "./_components/Footer";
 import VideoEmbed from "./_components/VideoEmbed";
 import Features from "./_components/Features";
 import Highlight from "./_components/Highlight";
+import CtaLinks from "./_components/CtaLinks";
 
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="relative">
         <Hero />
         <About />
         <Highlight />

@@ -30,7 +30,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins_fonts.className} antialiased relative`}>
+      <body
+        className={`${poppins_fonts.className} antialiased relative overflow-x-hidden`}
+      >
         <Preloader /> {/* This will be rendered client-side */}
         <div id="modal-root"></div>
         <SmoothScrolling>

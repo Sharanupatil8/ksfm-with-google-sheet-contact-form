@@ -3,6 +3,7 @@ import Subheader from "../_components/Subheader";
 import Image from "next/image";
 import VideoEmbed from "../_components/VideoEmbed";
 import Link from "next/link";
+import Highlight from "../_components/Highlight";
 
 function page() {
   return (
@@ -165,8 +166,6 @@ function page() {
           The time to invest in a life you truly deserve is now. 🌱
         </p>
       </div>
-
-      <VideoEmbed />
     </section>
   );
 }

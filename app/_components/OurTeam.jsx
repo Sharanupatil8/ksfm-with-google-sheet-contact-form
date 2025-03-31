@@ -45,7 +45,7 @@ function OurTeam() {
           Our Team
         </h2>
       </div>
-      <div className="grid mt-10 gap-6 md:gap-8 grid-cols-1  md:grid-cols-2 lg:grid-cols-3">
+      <div className="flex flex-wrap mt-10 gap-6 md:gap-8 justify-center">
         {team.map((member) => (
           <div
             key={member.name}
@@ -56,7 +56,7 @@ function OurTeam() {
               alt={member.name}
               width={360}
               height={480}
-              className="w-full h-[480px] object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-[360px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-emerald-900 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute inset-0 flex flex-col justify-end p-6 text-white transition-opacity duration-500">

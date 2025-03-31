@@ -43,7 +43,7 @@ function Hero() {
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-white text-4xl md:text-5xl xl:text-[84px] tracking-[-1px] font-bold font-ptserif leading-[1.3]">
-          Own Your Sustainable Farmvillas <br /> at Karnasree Farm Meadows
+          Own Your Sustainable Farmvillas
         </h1>
         <p className="mt-3 md:mt-4 hero-subtext text-gray-100 leading-[1.6] text-lg max-w-5xl">
           Own a serene farmvillas at Kar Na Sree, where sustainable living meets
