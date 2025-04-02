@@ -9,7 +9,7 @@ function page() {
     <section>
       <Subheader title="Blogs" />
       <section className="w-full px-4 md:px-8 lg:px-12 py-6 md:py-12 lg:py-16">
-        <h1>Coming soon...</h1>
+        <h1 className="font-ptserif text-3xl">Coming soon...</h1>
       </section>
     </section>
   );

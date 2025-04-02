@@ -4,6 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import {
+  FaClock,
+  FaEnvelope,
+  FaFacebookF,
+  FaInstagram,
+  FaPhone,
+  FaYoutube,
+} from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +20,50 @@ function Navbar() {
   console.log(pathName);
 
   return (
-    <header className="max-w-7xl w-full mx-auto border-b border-gray-400 left-1/2 -translate-x-1/2 absolute bg-gray-900/10 rounded-md backdrop-blur-md z-50 top-1 md:top-5">
+    <header className="max-w-7xl w-full mx-auto border-b border-gray-400 left-1/2 -translate-x-1/2 absolute bg-gray-900/10 rounded-md backdrop-blur-md z-50 top-1 md:top-1">
+      <div className="w-full border-b border-gray-50/10 py-2 text-white">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-2">
+          {/* Social Media Icons */}
+          <div className="flex items-center space-x-4 mb-2 md:mb-0">
+            <Link href="#" aria-label="Facebook">
+              <FaFacebookF className="text-white hover:text-emerald-300 transition-colors" />
+            </Link>
+            <Link href="#" aria-label="Instagram">
+              <FaInstagram className="text-white hover:text-emerald-300 transition-colors" />
+            </Link>
+
+            <Link href="#" aria-label="YouTube">
+              <FaYoutube className="text-white hover:text-emerald-300 transition-colors" />
+            </Link>
+          </div>
+
+          {/* Contact Info */}
+          <div className="flex flex-col md:flex-row items-center md:space-x-6">
+            {/* <div className="flex items-center mb-2 md:mb-0">
+              <FaClock className="text-emerald-400 mr-2" />
+              <span className="text-sm">MON-SAT: 09:30-17:30</span>
+            </div> */}
+            <div className="flex items-center mb-2 md:mb-0">
+              <FaEnvelope className="text-emerald-400 mr-2" />
+              <a
+                href="mailto:info@karnasreefarms.com"
+                className="text-sm hover:text-emerald-300 transition-colors"
+              >
+                info@karnasreefarms.com
+              </a>
+            </div>
+            <div className="flex items-center">
+              <FaPhone className="text-emerald-400 mr-2" />
+              <a
+                href="tel:+9916953333"
+                className="text-sm hover:text-emerald-300 transition-colors"
+              >
+                +91-991 695 3333
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <nav className="flex max-w-7xl mx-auto items-center justify-between w-full h-[60px] md:h-[80px] px-4 md:px-6">
         <Link href="/" className="overflow-hidden">
           <Image

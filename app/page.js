@@ -11,14 +11,12 @@ import CtaLinks from "./_components/CtaLinks";
 export default function Home() {
   return (
     <>
-      <main className="relative">
-        <Hero />
-        <About />
-        <Highlight />
-        <Features />
-        <Description />
-        <TestimonialsSection />
-      </main>
+      <Hero />
+      <About />
+      <Highlight />
+      <Features />
+      <Description />
+      <TestimonialsSection />
     </>
   );
 }

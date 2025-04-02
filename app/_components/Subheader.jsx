@@ -3,7 +3,7 @@ import React from "react";
 
 function Subheader({ title }) {
   return (
-    <section className="w-full h-[200px] md:h-[240px] lg:h-[280px] hero-bg relative">
+    <section className="w-full h-[200px] md:h-[240px] lg:h-[320px] hero-bg relative">
       {/* Dark overlay for better text visibility */}
       <div className="absolute inset-0 bg-black/30"></div>
 

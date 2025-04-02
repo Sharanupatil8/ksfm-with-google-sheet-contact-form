@@ -9,7 +9,7 @@ function CtaLinks() {
       <div className="mt-6 flex space-x-4 btn">
         <CtaButton />
         <Link
-          href="https://drive.google.com/drive/folders/1ia7TbgcEb_qvsWVUSG_dDWSrTersHebr?usp=sharing"
+          href="https://drive.google.com/file/d/1b1339Psb8MMoIZhKW4bDnH3_dC9XgIef/view?usp=sharing"
           target="_blank"
           className="text-lg flex items-center bg-amber-700 text-white px-6 py-2 rounded-md shadow-md"
         >

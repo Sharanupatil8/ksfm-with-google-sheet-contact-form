@@ -45,7 +45,19 @@ function Highlight() {
                 Chikkaballapur District, Karnataka
               </p>
             </div>
-            <div className="bg-emerald-800/50  backdrop-blur-lg px-3 py-3 mt-6">
+            <div className="flex justify-center mt-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 25"
+                className="h-6 w-6 text-gray-100"
+              >
+                <path
+                  style={{ fill: "#ffffff" }}
+                  d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"
+                />
+              </svg>
+            </div>
+            <div className="bg-emerald-800/50  backdrop-blur-lg px-3 py-3 mt-2">
               <div className="flex space-x-2 items-center text-gray-300">
                 {" "}
                 <HiHomeModern className="h-6 w-6 " />
@@ -56,7 +68,19 @@ function Highlight() {
                 of fertile Farmland.
               </p>
             </div>
-            <div className="bg-emerald-800/50  backdrop-blur-lg px-3 py-3 mt-6">
+            <div className="flex justify-center mt-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 25"
+                className="h-6 w-6 text-gray-100"
+              >
+                <path
+                  style={{ fill: "#ffffff" }}
+                  d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"
+                />
+              </svg>
+            </div>
+            <div className="bg-emerald-800/50  backdrop-blur-lg px-3 py-3 mt-2">
               <div className="flex space-x-1 items-center text-gray-300">
                 {" "}
                 <HiShieldCheck className="h-6 w-6 " />

@@ -23,7 +23,7 @@ const Preloader = () => {
     }, 2000);
 
     if (videoRef.current) {
-      videoRef.current.playbackRate = 2.5;
+      videoRef.current.playbackRate = 2.4;
     }
 
     return () => {

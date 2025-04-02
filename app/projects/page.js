@@ -24,12 +24,12 @@ function page() {
               <p className="text-gray-600 mb-4">
                 Imagine waking up to the soft rustling of leaves, stepping onto
                 your veranda with a steaming cup of chai, and watching the
-                morning mist roll over your own lush farmland. At Kar Na Sree
-                Farm Meadows, you don’t just own land—you own a living,
-                breathing ecosystem that flourishes alongside you. Just a short
-                drive from bengaluru, this premium farm land with villa project
-                offers a unique opportunity to invest in nature while enjoying
-                modern comforts.
+                morning mist roll over your own lush farmland. At Karnasree Farm
+                Meadows, you don’t just own land—you own a living, breathing
+                ecosystem that flourishes alongside you. Just a short drive from
+                bengaluru, this premium farm land with villa project offers a
+                unique opportunity to invest in nature while enjoying modern
+                comforts.
               </p>
               <div className="mt-6 flex space-x-4 btn">
                 {/* <Link
@@ -39,7 +39,7 @@ function page() {
                   Book Site Visit
                 </Link> */}
                 <Link
-                  href="https://drive.google.com/drive/folders/1ia7TbgcEb_qvsWVUSG_dDWSrTersHebr?usp=sharing"
+                  href="https://drive.google.com/file/d/1b1339Psb8MMoIZhKW4bDnH3_dC9XgIef/view?usp=sharing"
                   target="_blank"
                   className="text-lg bg-amber-700 text-white px-6 py-2 rounded-md shadow-md"
                 >
@@ -107,7 +107,7 @@ function page() {
 
       <div className="max-w-7xl mx-auto pb-6 md:pb-12 px-4">
         <h2 className="heading-secondary font-ptserif font-bold text-2xl md:text-3xl  lg:text-5xl mb-3">
-          Why Invest in Kar Na Sree Farm Meadows?
+          Why Invest in Karnasree Farm Meadows?
         </h2>
         <ul className="flex flex-col gap-y-1 list-disc list-inside">
           <li>

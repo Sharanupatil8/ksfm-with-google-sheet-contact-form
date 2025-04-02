@@ -42,17 +42,22 @@ function Hero() {
       </div>
       {/* Hero Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-white text-4xl md:text-5xl xl:text-[84px] tracking-[-1px] font-bold font-ptserif leading-[1.3]">
+        <h1 className="text-white text-5xl md:text-5xl xl:text-[84px] tracking-[-1px] font-bold font-ptserif leading-[1.3]">
           Own Your Sustainable Farmvillas
         </h1>
         <p className="mt-3 md:mt-4 hero-subtext text-gray-100 leading-[1.6] text-lg max-w-5xl">
-          Own a serene farmvillas at Kar Na Sree, where sustainable living meets
-          well-being in harmony with nature.
+          Karnasree Farm Meadows – Your Eco-Friendly FarmVilla Community
         </p>
-        <div className="mt-6 flex space-x-4 btn">
+        <p className="mt-3 hidden md:block md:mt-5 hero-subtext text-gray-100 leading-[1.6] text-lg max-w-5xl">
+          Introducing Meadows by Karnasree Farm Developers & Promoters—a
+          visionary project that blends the charm of farmland living with
+          privately owned FarmVillas, alongside a deep commitment to sustainable
+          agriculture and environmental preservation.
+        </p>
+        <div className="mt-8 flex md:flex-row flex-col items-center gap-y-4 md:gap-y-0  space-x-4 btn">
           <CtaButton />
           <Link
-            href="https://drive.google.com/drive/folders/1ia7TbgcEb_qvsWVUSG_dDWSrTersHebr?usp=sharing"
+            href="https://drive.google.com/file/d/1b1339Psb8MMoIZhKW4bDnH3_dC9XgIef/view?usp=sharing"
             target="_blank"
             className="text-lg flex items-center bg-amber-700 text-white px-6 py-2 rounded-md shadow-md"
           >

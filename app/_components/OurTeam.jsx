@@ -30,7 +30,7 @@ const team = [
     name: "Manasa S Gowda",
     image: "/team/manasa-partner.jpg",
     description:
-      "Manasa, a managing partner at Kar Na Sree Farm Developers and Promoters, is deeply passionate about the rural sector. She plays a key role in managing and promoting Karnasree Farm Meadows, driving its growth and success.",
+      "Manasa, a managing partner at Karnasree Farm Developers and Promoters, is deeply passionate about the rural sector. She plays a key role in managing and promoting Karnasree Farm Meadows, driving its growth and success.",
   },
 ];
 

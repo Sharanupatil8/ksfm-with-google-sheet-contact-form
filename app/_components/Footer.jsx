@@ -84,7 +84,7 @@ function Footer() {
                     href="tel:+917975276153"
                     className="text-emerald-200 hover:text-white text-sm transition-colors duration-300"
                   >
-                    +91 - 991 6953 333
+                    +91 - 991 695 3333
                   </a>
                   <a
                     href="tel:+917975276153"
