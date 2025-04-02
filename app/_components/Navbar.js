@@ -25,14 +25,26 @@ function Navbar() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-2">
           {/* Social Media Icons */}
           <div className="flex items-center space-x-4 mb-2 md:mb-0">
-            <Link href="#" aria-label="Facebook">
+            <Link
+              href="https://www.facebook.com/profile.php?id=100077510833438&mibextid=wwXIfr&mibextid=wwXIfr"
+              aria-label="Facebook"
+              target="_blank"
+            >
               <FaFacebookF className="text-white hover:text-emerald-300 transition-colors" />
             </Link>
-            <Link href="#" aria-label="Instagram">
+            <Link
+              href="https://www.instagram.com/karnasreefarms?igsh=MjU5cGM4NjdkcmFq&utm_source=qr"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <FaInstagram className="text-white hover:text-emerald-300 transition-colors" />
             </Link>
 
-            <Link href="#" aria-label="YouTube">
+            <Link
+              href="https://youtube.com/@karnasreefarms?si=WcsuoKNVLWR1Wnuf"
+              target="_blank"
+              aria-label="YouTube"
+            >
               <FaYoutube className="text-white hover:text-emerald-300 transition-colors" />
             </Link>
           </div>

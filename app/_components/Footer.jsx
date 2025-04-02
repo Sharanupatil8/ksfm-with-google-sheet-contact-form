@@ -46,7 +46,7 @@ function Footer() {
               </a>
 
               <a
-                href="https://www.instagram.com/karnasreefarms?igsh=MjU5cGM4NjdkcmFq&utm_source=qr"
+                href="https://youtube.com/@karnasreefarms?si=WcsuoKNVLWR1Wnuf"
                 target="_blank"
                 className="text-emerald-200 hover:text-white hover:scale-105 transition-allduration-300"
               >
