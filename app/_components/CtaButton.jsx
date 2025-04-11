@@ -10,7 +10,7 @@ function CtaButton() {
     function setInitialPopup() {
       setShowForm(true);
     }
-    setTimeout(setInitialPopup, 5000);
+    setTimeout(setInitialPopup, 8000);
 
     return function () {
       clearInterval(setInitialPopup);

@@ -31,7 +31,7 @@ function Description() {
         >
           <div className="relative w-full h-64 lg:h-auto rounded-xl overflow-hidden">
             <Image
-              src="/assets/image1.webp"
+              src="/sitevisit.webp"
               alt="best farmland in bengaluru"
               fill
               className="object-cover"

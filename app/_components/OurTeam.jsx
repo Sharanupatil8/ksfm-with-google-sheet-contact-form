@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const team = [
   {
@@ -34,6 +36,18 @@ const team = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 100 },
+  show: { opacity: 1, y: 0 },
+};
 function OurTeam() {
   return (
     <section className="max-w-7xl mx-auto py-12 md:py-16 lg:py-20">
@@ -45,9 +59,15 @@ function OurTeam() {
           Our Team
         </h2>
       </div>
-      <div className="flex flex-wrap mt-10 gap-6 md:gap-8 justify-center">
+      <motion.div
+        className="flex flex-wrap mt-10 gap-6 md:gap-8 justify-center"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="show"
+      >
         {team.map((member) => (
-          <div
+          <motion.div
+            variants={itemVariants}
             key={member.name}
             className="relative group overflow-hidden rounded-lg shadow-lg"
           >
@@ -65,9 +85,9 @@ function OurTeam() {
                 {member.description}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

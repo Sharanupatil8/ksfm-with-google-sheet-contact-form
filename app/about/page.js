@@ -9,7 +9,7 @@ function page() {
     <section>
       <Subheader title="About Us" />
       <section className="w-full px-4 md:px-8 lg:px-12 py-6 md:py-12 lg:py-16">
-        <div className="max-w-7xl mx-auto gap-y-8 md:gap-y-0 gapx-0 lg:gap-x-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+        <div className="max-w-8xl mx-auto gap-y-8 md:gap-y-0 gapx-0 lg:gap-x-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
           <div>
             <div className="text-gray-900 mb-4 md:mb-8">
               <p className="text-lg mt-1 text-above-heading">
@@ -53,7 +53,7 @@ function page() {
               alt="karnasree farms trust"
               width="600"
               height="700"
-              className="object-cover rounded-3xl py-3 px-4 h-full w-full"
+              className="object-cover rounded-3xl py-3 px-4 h-full w-auto"
             />
           </div>
         </div>
