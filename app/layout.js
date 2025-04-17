@@ -1,6 +1,5 @@
 import { Poppins, PT_Serif } from "next/font/google";
 import SmoothScrolling from "./_components/SmoothScrolling";
-import Hero from "./_components/Hero";
 import Footer from "./_components/Footer";
 import Navbar from "./_components/Navbar";
 import Preloader from "./_components/Preloader"; // Import the Preloader component
@@ -9,12 +8,6 @@ const poppins_fonts = Poppins({
   subsets: ["latin"],
   display: "swap",
   weight: ["300", "400", "500", "700", "800", "900"],
-});
-
-const ptserif = PT_Serif({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "700"],
 });
 
 import "./globals.css";
@@ -31,10 +24,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins_fonts.className} antialiased relative overflow-x-hidden`}
+        className={`${poppins_fonts.className}  antialiased relative overflow-x-hidden`}
       >
+        <div id="modal-root" className=""></div>
         <Preloader /> {/* This will be rendered client-side */}
-        <div id="modal-root"></div>
         <SmoothScrolling>
           <Navbar />
           <main>{children}</main>

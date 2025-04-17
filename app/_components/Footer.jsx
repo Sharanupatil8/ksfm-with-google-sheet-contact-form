@@ -158,7 +158,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="w-full   rounded-md relative">
+          <div className="w-full   rounded-2xl relative">
             <h2 className="text-xl md:text-2xl font-ptserif font-bold mb-2 text-emerald-100">
               Project Location:
             </h2>
@@ -170,7 +170,7 @@ function Footer() {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="filter brightness-95"
+              className="filter brightness-95 rounded-xl"
             ></iframe>
           </div>
 

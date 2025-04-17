@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import CtaButton from "./CtaButton";
 import { HardDriveDownload } from "lucide-react";
 import { HiArrowDown } from "react-icons/hi2";
+import DownloadCtaButton from "./DownloadCtaButton";
 
 function Hero() {
   useGSAP(() => {
@@ -56,16 +57,8 @@ function Hero() {
         </p>
         <div className="mt-8 flex md:flex-row flex-col items-center gap-y-4 md:gap-y-0  space-x-4 btn">
           <CtaButton />
-          <Link
-            href="https://drive.google.com/file/d/1b1339Psb8MMoIZhKW4bDnH3_dC9XgIef/view?usp=sharing"
-            target="_blank"
-            className="text-lg flex items-center bg-amber-700 text-white px-6 py-2 rounded-md shadow-md"
-          >
-            <span>
-              <HiArrowDown className="me-1" />
-            </span>
-            <p> Download Brochure</p>
-          </Link>
+
+          <DownloadCtaButton />
         </div>
       </div>
     </header>

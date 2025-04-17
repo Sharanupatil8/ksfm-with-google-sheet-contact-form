@@ -50,12 +50,12 @@ function Navbar() {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col md:flex-row items-center md:space-x-6">
+          <div className="flex  items-center md:space-x-6">
             {/* <div className="flex items-center mb-2 md:mb-0">
               <FaClock className="text-emerald-400 mr-2" />
               <span className="text-sm">MON-SAT: 09:30-17:30</span>
             </div> */}
-            <div className="flex items-center mb-2 md:mb-0">
+            <div className="  hidden md:flex  items-center mb-2 md:mb-0">
               <FaEnvelope className="text-emerald-400 mr-2" />
               <a
                 href="mailto:info@karnasreefarms.com"

@@ -120,3 +120,26 @@ body {
 .features-image:nth-child(4) {
   background-image: url("../public/assets/villa.webp");
 }
+
+.blog h2 {
+  @apply text-2xl md:text-3xl font-semibold text-gray-800 mt-8 mb-4;
+}
+
+/* p - Paragraph */
+.blog p {
+  @apply text-lg text-gray-700 leading-relaxed mb-6;
+}
+
+/* ul - Unordered List */
+.blog ul {
+  @apply list-disc pl-6 space-y-3 text-gray-700;
+}
+
+/* li - List Items */
+.blog ul li {
+  @apply text-lg;
+}
+
+.blog a {
+  @apply text-emerald-500 font-medium;
+}

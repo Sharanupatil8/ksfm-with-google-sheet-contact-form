@@ -1,21 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { HiCalendar } from "react-icons/hi2";
 import Modal from "./Modal";
 
 function CtaButton() {
   const [showForm, setShowForm] = useState(false);
-
-  useEffect(() => {
-    function setInitialPopup() {
-      setShowForm(true);
-    }
-    setTimeout(setInitialPopup, 8000);
-
-    return function () {
-      clearInterval(setInitialPopup);
-    };
-  }, []);
 
   return (
     <>

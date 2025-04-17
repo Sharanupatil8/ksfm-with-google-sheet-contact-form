@@ -8,7 +8,7 @@ const team = [
     name: "M R Shivakumar Gowda",
     image: "/team/shivakumar-gowda-managing-partner.jpg",
     description:
-      "With decades of experience in real estate and farmland development, D R Shivakumar, Director and Managing Partner of Karnasree Farm Developers and Promoters, began his journey in rural Karnataka, where his deep connection to the land inspired his vision for Karnasree Farm Meadows. Driven by a passion for creating sustainable spaces, he developed this project to provide both a serene environment and valuable investment opportunities.",
+      "With decades of experience in real estate and farmland development, M R Shivakumar, Director and Managing Partner of Karnasree Farm Developers and Promoters, began his journey in rural Karnataka, where his deep connection to the land inspired his vision for Karnasree Farm Meadows. Driven by a passion for creating sustainable spaces, he developed this project to provide both a serene environment and valuable investment opportunities.",
   },
   {
     name: "K Malini Shivakumar Gowda",
